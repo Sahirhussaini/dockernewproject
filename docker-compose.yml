@@ -1,26 +1,26 @@
 version: '3.8'
 services:
   movies:
-    image: sahirhussaini/paytmmovies:latest
+    image: sahirhussaini/mmovies:latest
     ports:
-      - "81:80"
+      - "91:80"
     deploy:
       replicas: 3
   train:
-    image: sahirhussaini/paytmtrain:latest
+    image: sahirhussaini/train:latest
     ports:
-      - "82:80"
+      - "92:80"
     deploy:
       replicas: 3
   dth:
-    image: sahirhussaini/paytmrecharge:latest
+    image: sahirhussaini/recharge:latest
     ports:
-      - "83:80"
+      - "93:80"
     deploy:
       replicas: 3
   recharge:
-    image: sahirhussaini/paytmdth:latest
+    image: sahirhussaini/dth:latest
     ports:
-      - "84:80"
+      - "94:80"
     deploy:
       replicas: 3
