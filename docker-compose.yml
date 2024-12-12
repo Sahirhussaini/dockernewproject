@@ -3,7 +3,7 @@ services:
   movies:
     image: sahirhussaini/paytmmovies:latest
     ports:
-      - "89:80"
+      - "81:80"
     deploy:
       replicas: 3
   train:
