@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   movies:
-    image: sahirhussaini/mmovies:latest
+    image: sahirhussaini/movies:latest
     ports:
       - "91:80"
     deploy:
